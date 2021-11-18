@@ -18,4 +18,34 @@ public class Roller
         // initialise instance variables
         
     }
+
+    public static void rollD4s()
+    {
+
+    }
+
+    public static void rollD6s()
+    {
+
+    }
+
+    public static void rollD8s()
+    {
+
+    }
+
+    public static void rollD10s()
+    {
+
+    }
+
+    public static void rollD12s()
+    {
+
+    }
+
+    public static void rollD20s()
+    {
+        
+    }
 }
