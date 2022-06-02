@@ -11,6 +11,7 @@
 import java.awt.event.*;
 import java.util.*;
 import javax.swing.*;
+import java.awt.Color;
 
 public class RollWindow extends JFrame
 {
@@ -37,8 +38,8 @@ public class RollWindow extends JFrame
     private ArrayList<Integer> d12Vals = new ArrayList<Integer>();
     private ArrayList<Integer> d20Vals = new ArrayList<Integer>();
     private ArrayList<Integer> d100Vals = new ArrayList<Integer>();
-    private static final int frameWidth = 450;
-    private static final int frameHeight = 400;
+    private static final int frameWidth = 225;
+    private static final int frameHeight = 450;
     private static final int diceAreaWidth = 30;
 
     /**
@@ -47,6 +48,8 @@ public class RollWindow extends JFrame
     public RollWindow()
     {
         //Where we'll initialize JFrame components
+        JPanel panel = new JPanel();
+        panel.setBackground(Color.LIGHT_GRAY);
         incD4 = new JButton("+");
         incD6 = new JButton("+");
         incD8 = new JButton("+");
@@ -61,7 +64,72 @@ public class RollWindow extends JFrame
         decD12 = new JButton("-");
         decD20 = new JButton("-");
         decD100 = new JButton("-");
-    }
+        roll = new JButton("Roll da dice!");
+        clear = new JButton("Clear");
 
-    
+        lD4 = new JLabel("D4: ");
+        lD6 = new JLabel("D6: ");
+        lD8 = new JLabel("D8: ");
+        lD10 = new JLabel("D10: ");
+        lD12 = new JLabel("D12: ");
+        lD20 = new JLabel("D20: ");
+        lD100 = new JLabel("D100: ");
+
+        aD4 = new JTextArea("0d4", 1, 7);
+        aD6 = new JTextArea("0d6", 1, 7);
+        aD8 = new JTextArea("0d8", 1, 7);
+        aD10 = new JTextArea("0d10", 1, 7);
+        aD12 = new JTextArea("0d12", 1, 7);
+        aD20 = new JTextArea("0d20", 1, 7);
+        aD100 = new JTextArea("0d100", 1, 7);
+
+        mod = new JTextField(20);
+
+        out = new JTextArea("", 8, 15);
+
+        panel.add(lD4);
+        panel.add(aD4);
+        panel.add(incD4);
+        panel.add(decD4);
+
+        panel.add(lD6);
+        panel.add(aD6);
+        panel.add(incD6);
+        panel.add(decD6);
+
+        panel.add(lD8);
+        panel.add(aD8);
+        panel.add(incD8);
+        panel.add(decD8);
+
+        panel.add(lD10);
+        panel.add(aD10);
+        panel.add(incD10);
+        panel.add(decD10);
+
+        panel.add(lD12);
+        panel.add(aD12);
+        panel.add(incD12);
+        panel.add(decD12);
+
+        panel.add(lD20);
+        panel.add(aD20);
+        panel.add(incD20);
+        panel.add(decD20);
+
+        panel.add(lD100);
+        panel.add(aD100);
+        panel.add(incD100);
+        panel.add(decD100);
+
+        panel.add(mod);
+        panel.add(roll);
+        panel.add(clear);
+
+        panel.add(out);
+
+        add(panel);
+
+        setSize(frameWidth, frameHeight);
+    }
 }
