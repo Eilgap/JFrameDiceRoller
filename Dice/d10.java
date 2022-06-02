@@ -4,6 +4,7 @@ public class d10 implements Dice {
 
     private int numberRolled = 0;
 
+    @Overrride
     public int rollDaDice() {
         numberRolled = (int) Math.ceil(Math.random() * 10 + 1);
         return numberRolled;
