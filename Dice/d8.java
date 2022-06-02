@@ -4,7 +4,7 @@ public class d8 implements Dice {
 
     private int numberRolled = 0;
 
-    @Overrride
+    @Override
     public int rollDaDice() {
         numberRolled = (int) Math.ceil(Math.random() * 8 + 1);
         return numberRolled;
