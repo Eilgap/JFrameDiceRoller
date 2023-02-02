@@ -1,2 +1,2 @@
-This is just a project two computer science students are collaborating on for fun, nothing in particular to see here.
-Authors: Logan Keim and Calvin Niewind
+This is a project I started up to get a bit of practice with jFrame. I wanted to make an application I could use practically.
+Author: Logan Keim
