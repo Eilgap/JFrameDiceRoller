@@ -345,7 +345,7 @@ public class RollWindow extends JFrame
         }
         for(int d : d100Vals)
             total += d;
-        out.append("\n" + rollAmounts.get(2) + "D100 Total: " + total);
+        out.append("\n" + rollAmounts.get(6) + "D100 Total: " + total);
         total2 += total;
         total = 0;
 
